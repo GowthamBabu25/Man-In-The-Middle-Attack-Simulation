@@ -1,0 +1,21 @@
+<div class="form">
+  <p>Attacker</p>
+  <input type="text" id="P" placeholder="P Value" name="Pval1" [(ngModel)]="P">
+	<input type="text" id="G" placeholder="G Value" name="Gval1" [(ngModel)]="G">
+	<input type="submit" id="submit" value="Fetch" (click)="getValue()">
+  <div class="rand">
+    <input type="text" id="C" placeholder="Private Key C" name="Cval" [(ngModel)]="C" >
+	  <input type="text" id="D" placeholder="Private Key D" name="Dval" [(ngModel)]="D">
+    <input type="button" id="but1" value="Generate Random Value" (click)="randomValue()" >
+  </div>
+
+  <input type="text" id="b" placeholder="Public Key S1" name="Bval"[(ngModel)]="intX" >
+  <input type="text" id="Y" placeholder="Public Key S2" name="Yval"[(ngModel)]="intY" >
+  <input type="button" id="but1" value="Calculate public Key" (click)="calValue() ">
+  <input type="text" id="recA" placeholder="Receive A" name="Aval"[(ngModel)]="S1" >
+  <input type="text" id="recB" placeholder="Receive B" name="bval" [(ngModel)]="S2">
+  <input type="button" id="pkv" value="Attack" (click)="getPublicKeyValue()">
+	<input type="text" id="ssa" placeholder="Shared Secret A" name="SSA"[(ngModel)]="ssa">
+  <input type="text" id="ssb" placeholder="Shared Secret B" name="SSB" [(ngModel)]="ssb">
+	<input type="button" id="calculate" value="Calculate" (click)="calcualte()">
+</div>

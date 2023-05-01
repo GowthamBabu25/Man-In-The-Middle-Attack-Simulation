@@ -1,0 +1,12 @@
+<div class="form">
+  <p>User2</p>
+  <input type="text" id="P" placeholder="P Value" name="Pval1" [(ngModel)]="P">
+	<input type="text" id="G" placeholder="G Value" name="Gval1" [(ngModel)]="G">
+	<input type="submit" id="submit" value="Fetch" (click)="getValue()">
+  <input type="text" id="b" placeholder="Enter Private Key b" name="Bval" [(ngModel)]="B">
+  <input type="text" id="Y" placeholder="Public Key Y" name="Yval" [(ngModel)]="Y">
+  <input type="button" id="but1" value="Calculate public Key" (click)="calY()">
+  <input type="text" id="recB" placeholder="Receive A" name="Aval"[(ngModel)]="RecA" >
+	<input type="text" id="gen" placeholder="Shared Secret" name="gen"[(ngModel)]="Shared2">
+	<input type="submit" id="calculate" value="Calculate" (click)="calculate()">
+</div>
