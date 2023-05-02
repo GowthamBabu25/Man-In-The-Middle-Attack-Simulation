@@ -21,6 +21,7 @@ export class User2Component implements OnInit{
   calY(){
     this.Y=(Math.pow(this.G,this.B))%this.P
     this.attack1.setYVal(this.Y);
+    
   }
   calculate(){
     this.RecA=this.attack1.intYval;
